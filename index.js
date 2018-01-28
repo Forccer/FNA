@@ -30,8 +30,6 @@ fs.readdir("./cmds", (err, files) => {
 
 //var commandsList = (fs.readFileSync('Storage/commands.txt', 'utf8'))
 
-bot.login(botSettings.token)
-
 bot.on("ready", async() => {
     console.log(`${bot.user.username} bot, ready to roll!`)
     console.log(bot.commands)
@@ -88,5 +86,5 @@ bot.on("message", async message => {
 
 })
 
-
+bot.login(BOT_TOKEN)
 
